@@ -69,7 +69,7 @@ describe('traversal methods in cypress', () => {
     })
     it('To get the closest ancestor DOM element, use the .closest() command', () => {
         cy.visit('https://www.webdriveruniversity.com/Data-Table/index.html')
-        cy.get('#sugar').closest('li[id="coffee"]').should('have.id','Coffee')
+        cy.get('#sugar').closest('ul').should('have.attr','Class','traversal-drinks-list')
     })
 
     it('To remove DOM element(s) from the set of elements, use the .not() command', () => {
